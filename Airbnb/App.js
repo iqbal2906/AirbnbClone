@@ -28,6 +28,7 @@ import {
 import Entype from 'react-native-vector-icons';
 
 import HomeScreen from './src/screens/Home';
+import SearchResults from './src/screens/SearchResults';
 import Post from './src/components/Post';
 
 import feed from './assets/data/feed';
@@ -72,7 +73,8 @@ const App: () => React$Node = () => {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <SafeAreaView style={backgroundStyle}>
         {/* <HomeScreen /> */}
-        <Post post={post1} />
+        {/* <Post post={post1} /> */}
+        <SearchResults />
       </SafeAreaView>
     </>
   );

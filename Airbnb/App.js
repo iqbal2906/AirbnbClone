@@ -26,6 +26,7 @@ import {
 import HomeScreen from './src/screens/Home';
 import SearchResults from './src/screens/SearchResults';
 import DestinationSearch from './src/screens/DestinationSearch';
+import Guests from './src/screens/Guests';
 import Post from './src/components/Post';
 
 const Section = ({children, title}): React$Node => {
@@ -68,7 +69,8 @@ const App: () => React$Node = () => {
         {/* <HomeScreen /> */}
         {/* <Post post={post1} /> */}
         {/* <SearchResults /> */}
-        <DestinationSearch />
+        {/* <DestinationSearch /> */}
+        <Guests />
       </SafeAreaView>
     </>
   );

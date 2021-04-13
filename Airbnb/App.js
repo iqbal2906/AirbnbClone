@@ -28,6 +28,9 @@ import SearchResults from './src/screens/SearchResults';
 import DestinationSearch from './src/screens/DestinationSearch';
 import Guests from './src/screens/Guests';
 import Post from './src/components/Post';
+import 'react-native-gesture-handler';
+
+import Router from './src/navigation/Router';
 
 const Section = ({children, title}): React$Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -65,13 +68,7 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <SafeAreaView style={backgroundStyle}>
-        {/* <HomeScreen /> */}
-        {/* <Post post={post1} /> */}
-        {/* <SearchResults /> */}
-        {/* <DestinationSearch /> */}
-        <Guests />
-      </SafeAreaView>
+      <Router />
     </>
   );
 };

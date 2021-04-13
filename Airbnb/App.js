@@ -28,6 +28,7 @@ import {
 import Entype from 'react-native-vector-icons';
 
 import HomeScreen from './src/screens/Home';
+import Post from './src/components/Post';
 
 const Section = ({children, title}): React$Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -66,7 +67,8 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <SafeAreaView style={backgroundStyle}>
-        <HomeScreen />
+        {/* <HomeScreen /> */}
+        <Post />
       </SafeAreaView>
     </>
   );

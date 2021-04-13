@@ -9,9 +9,7 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
-  StyleSheet,
   Text,
   useColorScheme,
   View,
@@ -25,15 +23,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import Entype from 'react-native-vector-icons';
-
 import HomeScreen from './src/screens/Home';
 import SearchResults from './src/screens/SearchResults';
+import DestinationSearch from './src/screens/DestinationSearch';
 import Post from './src/components/Post';
-
-import feed from './assets/data/feed';
-
-const post1 = feed[0];
 
 const Section = ({children, title}): React$Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -74,7 +67,8 @@ const App: () => React$Node = () => {
       <SafeAreaView style={backgroundStyle}>
         {/* <HomeScreen /> */}
         {/* <Post post={post1} /> */}
-        <SearchResults />
+        {/* <SearchResults /> */}
+        <DestinationSearch />
       </SafeAreaView>
     </>
   );
